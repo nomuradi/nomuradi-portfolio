@@ -45,6 +45,9 @@ async function build() {
     fs.mkdirSync('public', { recursive: true });
     fs.writeFileSync('public/index.html', html);
     
+    // Copy Google verification file
+    fs.writeFileSync('public/google472998f3e73dc518.html', 'google-site-verification: google472998f3e73dc518.html');
+    
     console.log('Build complete with posts:', postIds.slice(0, 4));
 }
 
