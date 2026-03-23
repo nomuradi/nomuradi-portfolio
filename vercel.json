@@ -1,5 +1,11 @@
 {
-  "buildCommand": "npm run build",
+  "buildCommand": "node build.js",
   "outputDirectory": "public",
-  "framework": null
+  "framework": null,
+  "crons": [
+    {
+      "path": "/api/redeploy",
+      "schedule": "0 * * * *"
+    }
+  ]
 }
